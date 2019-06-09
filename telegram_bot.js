@@ -48,15 +48,15 @@ var TelegramApi = function (params)
 
     var _rest = request.defaults({
 
-        agentClass: Agent,
-        agentOptions: {
-            socksHost: params.http_proxy.host, // Defaults to 'localhost'.
-            socksPort: params.http_proxy.port, // Defaults to 1080.
-
-            // Optional credentials
-            socksUsername: params.http_proxy.user,
-            socksPassword: params.http_proxy.password,
-        }
+        // agentClass: Agent,
+        // agentOptions: {
+        //     socksHost: params.http_proxy.host, // Defaults to 'localhost'.
+        //     socksPort: params.http_proxy.port, // Defaults to 1080.
+        //
+        //     // Optional credentials
+        //     socksUsername: params.http_proxy.user,
+        //     socksPassword: params.http_proxy.password,
+        // }
     });
 
     // Default settings
