@@ -41,8 +41,15 @@ let scrape = async function() {
         let elements = document.querySelectorAll('.jobs .job'); // Выбираем все
 
         for (let element of elements){ // Проходимся в цикле по каждому
-            let title = element.querySelector('.title a').innerText; // Выбираем название
-            let price = element.querySelector('.count').innerText; // Выбираем цену
+
+            let title = element.querySelector('.title a'); // Выбираем название
+            if (title) {
+                title= title.innerText
+            }
+            let price = element.querySelector('.count'); // Выбираем цену
+            if (price) {
+                price = price.innerText;
+            }
 
             let skillsElement = element.querySelectorAll('.skills .skill');
             let skills = getSkills(skillsElement);
