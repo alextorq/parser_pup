@@ -16,6 +16,7 @@
     "express": "^4.17.1",
     "extend": "^3.0.2",
     "https": "^1.0.0",
+    "node-telegram-bot-api": "^0.30.0",
     "puppeteer": "^1.17.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",

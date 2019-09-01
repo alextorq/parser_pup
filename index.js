@@ -37,7 +37,13 @@ api.on('message', function(message)
                         console.log(err);
                     });
 
-            }).catch((error) => {console.log(error)});
+            }).catch((error) => {
+                api.sendMessage({chat_id : chat_id, text: error})
+                    .catch(function(err)
+                    {
+                        console.log(err);
+                    });
+                console.log(error)});
             break;
     }
 
