@@ -1,5 +1,7 @@
 const puppeteer = require('puppeteer');
 
+
+
 function jsonToHTML (data) {
     let result = [];
     for (let job of data) {
